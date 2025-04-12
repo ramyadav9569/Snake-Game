@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/3e/Snake_game_icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <div class="game-container">
+        <!-- Snake Game Title Inside the Game Container -->
+        <h1 id="gameTitle">Snake Game</h1>
+
+        <canvas id="gameCanvas" width="300" height="300"></canvas>
+        <div id="gameInfo">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameOverScreen" class="hidden">
+        <div class="gameOver-content">
+            <h2>Game Over</h2>
+            <p>Your final score is: <span id="finalScore"></span></p>
+            <button id="restartBtn" onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Developer Credit Footer -->
+    <footer id="developerCredit">
+        <p>Developed by <strong>Ram Yadav</strong></p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
